@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features and Text Formats · Text Case</title>
+<meta name="description" content="Explore 77 built-in text formats, Scratchpad, reusable flows, on-device AI, the Mac menu bar picker, Shortcuts and more.">
+<link rel="canonical" href="https://textcase.app/features/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://textcase.app/features/">
+<meta property="og:title" content="Features and Text Formats · Text Case">
+<meta property="og:description" content="Browse Text Case’s formats and see how to combine them into reusable workflows.">
+<meta property="og:image" content="https://textcase.app/assets/social.jpg">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+<script src="../script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36">Text Case</a>
+  <nav aria-label="Main navigation"><a href="./" aria-current="page">Features</a><a href="../#flows">Flows</a><a href="../release-notes/">What’s New</a><a href="../press/">Press Kit</a></nav>
+  <a class="button nav-download" href="../#download">Download <span aria-hidden="true">↓</span></a>
+</div></header>
+<main id="main" class="feature-details">
+  <section class="showcase-hero">
+    <div class="wrap showcase-lead">
+      <div>
+        <h1>Goodbye, messy text.</h1>
+        <p>Paste what you have. See what you can turn it into. Save the edits you’ll want to use again.</p>
+        <div class="download-row">
+          <a class="button primary" href="#formats">Try a format <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="#build-flows">See how flows work</a>
+        </div>
+      </div>
+      <figure class="device-stage">
+        <div class="device-tablet crop-ipad"><img src="../assets/ipad-scratchpad.webp" alt="Scratchpad on iPad, showing one pasted input and several text transformations" width="1800" height="1309" fetchpriority="high"></div>
+        <div class="device-phone crop-iphone"><img src="../assets/iphone-template.webp" alt="Clean a List template preview on iPhone" width="832" height="1800"></div>
+      </figure>
+    </div>
+  </section>
+  <div class="wrap showcase-body">
+  <nav class="feature-jump" aria-label="On this page">
+    <a href="#formats">Text formats</a><a href="#scratchpad">Scratchpad</a><a href="#build-flows">Flows and templates</a><a href="#ai">AI Transform</a><a href="#automation">Automation</a><a href="#storage">Flow storage</a>
+  </nav>
+
+  <section id="formats">
+    <h2>77 built-in formats</h2>
+    <p class="feature-intro">From headline styles to JSON, there’s a format for the little edits that add up. Try a few here.</p>
+    <div class="format-demo">
+      <fieldset class="format-options">
+        <legend>Choose a format</legend>
+        <label><input type="radio" name="format-example" value="slug" checked> URL Slug</label>
+        <label><input type="radio" name="format-example" value="snake"> Snake Case</label>
+        <label><input type="radio" name="format-example" value="markdown"> Markdown List</label>
+        <label><input type="radio" name="format-example" value="json"> Format JSON</label>
+      </fieldset>
+      <div class="format-sample"><span>Input</span><pre id="format-input">A Better Way to Edit Text</pre></div>
+      <div class="format-sample format-result"><span>Result</span><pre id="format-output" aria-live="polite">a-better-way-to-edit-text</pre></div>
+    </div>
+    <div class="format-grid">
+      <article><h3>Headlines and casing</h3><p>Title case for AP, APA, AMA, Bluebook, Chicago, The Guardian, MLA, The New York Times and Wikipedia. Switch to sentence case, uppercase or lowercase, or capitalise the first letter of each word. Add names and brand spellings to your personal dictionary.</p></article>
+      <article><h3>Whitespace and lists</h3><p>Trim each line, collapse repeated spaces, remove blank or duplicate lines and normalise line endings. Sort lines in either direction, or remove whitespace or line breaks entirely.</p></article>
+      <article><h3>Markdown and HTML</h3><p>Turn pasted lines into a numbered list, a bullet list or a block quote. Wrap a snippet in a code block, convert Markdown to HTML or strip HTML tags.</p></article>
+      <article><h3>Code and JSON</h3><p>Switch between <code>camelCase</code>, <code>PascalCase</code>, <code>snake_case</code> and <code>kebab-case</code>. Indent JSON for reading or minify it for a compact payload.</p></article>
+      <article><h3>URLs and encoding</h3><p>Turn a title into a URL slug, percent-encode or decode text, or convert to and from Base64.</p></article>
+      <article><h3>Counts and hashes</h3><p>Count words, characters or lines. Check character counts without whitespace or line counts without blank lines. Generate hashes including MD5, SHA-256 and SHA-512.</p></article>
+      <article><h3>Punctuation and playful text</h3><p>Switch between smart and straight quotes. Try Unicode styles such as script, small caps, strikethrough and circled letters, or turn words into hashtags or emoji.</p></article>
+    </div>
+  </section>
+
+  <section id="scratchpad" class="feature-story">
+    <div>
+      <h2>Try edits in Scratchpad</h2>
+      <p>Paste text once and compare results from formats and saved flows. Search by name, filter to favourites with the star, or pick a recently used transformation.</p>
+      <ul>
+        <li>Open a complete, selectable preview before copying or sharing.</li>
+        <li>Choose <strong>Use as Input</strong> to carry a result into the next edit. Undo lets you step back.</li>
+        <li>Choose list or grid view. The input and results sit side by side when there’s room, and stack in smaller windows.</li>
+      </ul>
+    </div>
+    <figure class="story-visual visual-blue"><div class="story-screen crop-ipad"><img src="../assets/ipad-scratchpad.webp" alt="Scratchpad on iPad with pasted text on the left and transformations on the right" width="1800" height="1309" loading="lazy"></div></figure>
+  </section>
+
+  <section id="build-flows" class="feature-story reverse-story">
+    <div>
+      <h2>Save a sequence as a flow</h2>
+      <p>Chain the edits you repeat. For a newsletter list, trim each line, remove blanks and duplicates, then turn the result into Markdown bullets.</p>
+      <ul>
+        <li>Add a prefix or suffix, replace or remove matching text, or split and join lines with a separator you supply.</li>
+        <li>Reorder numbered steps and preview intermediate results or the final output. Disable a step while keeping its settings.</li>
+        <li>Try five built-in templates for pasted text, headlines, lists, URL slugs and Markdown quotes. Edit the example and copy the result before deciding whether to save a flow.</li>
+      </ul>
+      <p><a class="text-link" href="../#flows">Try a sample flow <span aria-hidden="true">→</span></a></p>
+    </div>
+    <figure class="story-visual visual-red"><div class="story-screen flow-screen"><img src="../assets/flow-hero.webp" alt="Flow builder with input, output and numbered steps you can switch on or off" width="1600" height="1593" loading="lazy"></div></figure>
+  </section>
+
+  <section id="ai" class="feature-story">
+    <div>
+      <h2>Write your own instruction</h2>
+      <p>Ask AI Transform to shorten a paragraph or turn American spelling into British spelling. Generate a result in Scratchpad and review it before copying it or using it as input.</p>
+      <p>For a repeat job, save the prompt as a named AI format and add it to a flow alongside standard steps. Each saved flow step keeps a copy of its prompt.</p>
+      <p>AI generation runs on a supported device with Apple Intelligence enabled and the model available. Run flows with AI steps in the main app.</p>
+    </div>
+    <figure class="story-visual visual-blue"><div class="story-screen crop-ai"><img src="../assets/03-ai-transform.webp" alt="AI Transform with a written instruction and a result ready for review" width="1100" height="1206" loading="lazy"></div></figure>
+  </section>
+
+  <section id="automation">
+    <h2>Use Text Case where you work</h2>
+    <div class="automation-layout">
+    <figure class="story-visual visual-blue"><div class="story-screen crop-menu"><img src="../assets/01-menu-bar.webp" alt="Mac menu bar picker showing text formats and clipboard actions" width="752" height="852" loading="lazy"></div></figure>
+    <div class="automation-copy">
+      <article><h3>Mac menu bar</h3><p>Copy text, press <kbd>⌃⌥⌘T</kbd> and search for a flow or format. Paste the result into the app you were using, or restore your previous clipboard if it still holds that result. You can change the shortcut.</p></article>
+      <article><h3>Share sheet and Shortcuts</h3><p>On iPhone and iPad, select text in another app and choose <strong>Convert Text</strong> in the share sheet. Use supported formats and saved flows in Shortcuts for edits you want to automate.</p></article>
+      <article><h3>Mac Services and terminal</h3><p>Apply supported formats to selected text through macOS Services. The standalone <code>textcase</code> CLI accepts piped text or a direct argument and prints the result for use in scripts.</p></article>
+    </div>
+    </div>
+    <p class="feature-browse"><a class="text-link" href="../help/#mac">Set up the Mac menu bar picker <span aria-hidden="true">→</span></a></p>
+  </section>
+
+  <section id="storage">
+    <h2>Take your flows with you</h2>
+    <p class="feature-intro">Use iCloud Drive to sync flows across devices when available. Back up the whole collection from Flow Storage, or export a single flow to share.</p>
+    <p class="feature-intro">Open a <code>.textcaseflow</code> file in Files or Finder, or drop it onto the Flows list. Each import adds an editable copy and keeps existing flows. Flow Storage also lets you restore the last backup if you need it.</p>
+    <p class="feature-browse"><a class="text-link" href="../help/">Get help with imports and backups <span aria-hidden="true">→</span></a></p>
+  </section>
+
+  <div class="download-row">
+    <a class="button primary" href="../#download">Get Text Case <span aria-hidden="true">→</span></a>
+    <a class="button secondary" href="../release-notes/">What’s new in 2026.1</a>
+  </div>
+  </div>
+</main>
+<footer class="site-footer"><div class="wrap footer-grid">
+  <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="32" height="32">Text Case</a>
+  <nav aria-label="Footer"><a href="../release-notes/">Release Notes</a><a href="../press/">Press Kit</a><a href="../help/">Support</a><a href="https://chrishannah.me/apps/text-case/privacy-policy">Privacy</a></nav>
+  <p>Made by <a href="https://chrishannah.me/">Chris Hannah</a>.</p>
+</div></footer>
+</body>
+</html>

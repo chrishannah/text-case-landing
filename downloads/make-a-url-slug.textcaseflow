@@ -1,0 +1,29 @@
+{
+  "flows" : [
+    {
+      "colourIndex" : 6,
+      "formats" : [
+        {
+          "standard" : "normalizeLineEndings"
+        },
+        {
+          "replaceLineBreaksWith" : {
+            "one" : " "
+          }
+        },
+        {
+          "standard" : "trimWhitespace"
+        },
+        {
+          "standard" : "collapseRepeatedSpaces"
+        },
+        {
+          "standard" : "slug"
+        }
+      ],
+      "id" : "13B9C26E-B29F-4E20-BB67-58D6EBC68C28",
+      "name" : "Make a URL Slug"
+    }
+  ],
+  "version" : 1
+}

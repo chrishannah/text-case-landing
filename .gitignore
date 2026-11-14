@@ -1,0 +1,4 @@
+# Public downloads, even if the global ignore excludes downloads or archives.
+!/downloads/
+!/downloads/*.textcaseflow
+!/downloads/text-case-2026.1-press-kit.zip

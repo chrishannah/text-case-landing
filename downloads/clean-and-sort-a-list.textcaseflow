@@ -1,0 +1,27 @@
+{
+  "flows" : [
+    {
+      "colourIndex" : 4,
+      "formats" : [
+        {
+          "standard" : "normalizeLineEndings"
+        },
+        {
+          "standard" : "trimWhitespacePerLine"
+        },
+        {
+          "standard" : "removeEmptyLines"
+        },
+        {
+          "standard" : "removeDuplicateLines"
+        },
+        {
+          "standard" : "sortLines"
+        }
+      ],
+      "id" : "CB7B866F-7B4D-4732-B3F9-4344AB20E6A0",
+      "name" : "Clean and Sort a List"
+    }
+  ],
+  "version" : 1
+}

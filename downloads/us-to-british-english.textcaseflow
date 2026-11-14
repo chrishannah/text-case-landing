@@ -1,0 +1,18 @@
+{
+  "flows" : [
+    {
+      "colourIndex" : 5,
+      "formats" : [
+        {
+          "aiTransform" : {
+            "one" : "US to British English",
+            "two" : "Convert American English spelling and usage to British English. Preserve the meaning, names, paragraph breaks and formatting. Return only the converted text."
+          }
+        }
+      ],
+      "id" : "E2ED8F5C-F60C-4593-987A-32689F71E898",
+      "name" : "US to British English"
+    }
+  ],
+  "version" : 1
+}
