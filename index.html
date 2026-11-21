@@ -13,28 +13,48 @@
 <meta property="og:image" content="https://textcase.app/assets/social-text-case.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Text Case icon and wordmark surrounded by blue and red folded pages.">
+<meta property="og:image:alt" content="Text Case wordmark beside the blue and red Twin Pages mark.">
 <meta name="twitter:image" content="https://textcase.app/assets/social-text-case.jpg">
-<meta name="twitter:image:alt" content="Text Case icon and wordmark surrounded by blue and red folded pages.">
+<meta name="twitter:image:alt" content="Text Case wordmark beside the blue and red Twin Pages mark.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 <script defer src="script.js"></script>
+<link rel="stylesheet" href="themes.css">
+<script src="theme.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36">Text Case</a>
+    <a class="brand" href="./"><span class="twin-pages" aria-hidden="true"><i></i><i></i></span>Text Case</a>
     <nav aria-label="Main navigation"><a href="features/">Features</a><a href="#flows">Flows</a><a href="release-notes/">What’s New</a><a href="press/">Press Kit</a></nav>
     <a class="button nav-download" href="#download">Download <span aria-hidden="true">↓</span></a>
+  </div>
+  <div class="wrap appearance-controls" hidden>
+    <label>Theme
+      <select data-theme-picker>
+        <option value="signature">Signature</option>
+        <option value="plum">Plum</option>
+        <option value="ember">Ember</option>
+        <option value="woodland">Woodland</option>
+      </select>
+    </label>
+    <label>Appearance
+      <select data-appearance-picker>
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
   </div>
 </header>
 <main id="main" class="home-page">
   <section class="showcase-hero home-hero">
     <div class="wrap">
       <div class="home-lead">
+        <div><span class="aa-icon" role="img" aria-label="Text Case Aa app icon"></span></div>
         <a class="edition" href="release-notes/"><span></span> What’s new in 2026.1 <b aria-hidden="true">↗</b></a>
         <h1>Make text work<br>for <em>you.</em></h1>
         <p>Clean up a paste, fix a headline or format a block of JSON. Save the edits you repeat as a flow. Text Case is available for iPhone, iPad and Mac.</p>
@@ -45,8 +65,8 @@
       </div>
       <figure class="home-device-frame visual-blue">
         <div class="device-stage">
-          <div class="device-tablet crop-ipad"><img src="assets/ipad-scratchpad.webp" alt="Scratchpad on iPad, comparing text transformations side by side" width="1800" height="1309" fetchpriority="high"></div>
-          <div class="device-phone crop-iphone"><img src="assets/iphone-template.webp" alt="Clean a List template preview on iPhone" width="832" height="1800"></div>
+          <div class="device-tablet crop-ipad"><img src="assets/signature-light-scratchpad.webp" data-themed-scratchpad="assets/" alt="Text Case Scratchpad with live text transformations" width="1600" height="1135" fetchpriority="high"></div>
+          <div class="device-phone crop-iphone"><img src="assets/iphone-template.webp" alt="Clean a List template preview on iPhone" width="832" height="1808"></div>
         </div>
         <figcaption>Scratchpad on iPad and a flow template on iPhone</figcaption>
       </figure>
@@ -80,7 +100,7 @@
         <a class="text-link" href="#flows">Try a starter flow <span aria-hidden="true">↓</span></a>
       </div>
       <figure class="story-visual visual-red">
-        <div class="story-screen flow-screen"><img src="assets/flow-hero.webp" alt="Flow builder on Mac with input and output previews, numbered steps and switches" width="1600" height="1593" loading="lazy"></div>
+        <div class="story-screen flow-screen"><img src="assets/flow-hero.webp" alt="Flow builder on Mac with input and output previews, numbered steps and switches" width="1600" height="1000" loading="lazy"></div>
       </figure>
     </section>
 
@@ -142,8 +162,8 @@ Pears</pre></div>
         <p>Scratchpad adapts from the iPhone Duo’s outer display to its larger inner display, where there’s room for more results.</p>
       </div>
       <div class="duo-views">
-        <figure><a href="assets/duo-outer.webp"><img src="assets/duo-outer.webp" alt="Scratchpad on the iPhone Duo outer display" width="1100" height="1600" loading="lazy"></a><figcaption>Outer display</figcaption></figure>
-        <figure><a href="assets/duo-inner.webp"><img src="assets/duo-inner.webp" alt="Scratchpad on the unfolded iPhone Duo inner display" width="1600" height="1126" loading="lazy"></a><figcaption>Inner display</figcaption></figure>
+        <figure><a href="assets/duo-outer.webp"><img src="assets/duo-outer.webp" alt="Scratchpad on the iPhone Duo outer display" width="1100" height="1601" loading="lazy"></a><figcaption>Outer display</figcaption></figure>
+        <figure><a href="assets/duo-inner.webp"><img src="assets/duo-inner.webp" alt="Scratchpad on the unfolded iPhone Duo inner display" width="1600" height="1126" loading="lazy"></a><figcaption>Inner display · earlier preview</figcaption></figure>
       </div>
       <p class="home-note">Screenshots from 2026.1 development builds.</p>
     </div>
@@ -156,6 +176,6 @@ Pears</pre></div>
     </div>
   </section>
 </main>
-<footer class="site-footer"><div class="wrap footer-grid"><a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">Text Case</a><nav aria-label="Footer"><a href="features/">Features</a><a href="release-notes/">Release Notes</a><a href="press/">Press Kit</a><a href="help/">Support</a><a href="https://chrishannah.me/apps/text-case/privacy-policy">Privacy</a></nav><p>Made by <a href="https://chrishannah.me/">Chris Hannah</a>.</p></div></footer>
+<footer class="site-footer"><div class="wrap footer-grid"><a class="brand" href="./"><span class="twin-pages" aria-hidden="true"><i></i><i></i></span>Text Case</a><nav aria-label="Footer"><a href="features/">Features</a><a href="release-notes/">Release Notes</a><a href="press/">Press Kit</a><a href="help/">Support</a><a href="https://chrishannah.me/apps/text-case/privacy-policy">Privacy</a></nav><p>Made by <a href="https://chrishannah.me/">Chris Hannah</a>.</p></div></footer>
 </body>
 </html>

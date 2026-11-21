@@ -20,14 +20,33 @@
 <link rel="icon" href="../assets/favicon.png">
 <link rel="stylesheet" href="../styles.css">
 <script src="../script.js" defer></script>
+<link rel="stylesheet" href="../themes.css">
+<script src="../theme.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap nav">
-  <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36">Text Case</a>
+  <a class="brand" href="../"><span class="twin-pages" aria-hidden="true"><i></i><i></i></span>Text Case</a>
   <nav aria-label="Main navigation"><a href="./" aria-current="page">Features</a><a href="../#flows">Flows</a><a href="../release-notes/">What’s New</a><a href="../press/">Press Kit</a></nav>
   <a class="button nav-download" href="../#download">Download <span aria-hidden="true">↓</span></a>
-</div></header>
+</div>  <div class="wrap appearance-controls" hidden>
+    <label>Theme
+      <select data-theme-picker>
+        <option value="signature">Signature</option>
+        <option value="plum">Plum</option>
+        <option value="ember">Ember</option>
+        <option value="woodland">Woodland</option>
+      </select>
+    </label>
+    <label>Appearance
+      <select data-appearance-picker>
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+  </div>
+</header>
 <main id="main" class="feature-details">
   <section class="showcase-hero">
     <div class="wrap showcase-lead">
@@ -40,8 +59,8 @@
         </div>
       </div>
       <figure class="device-stage">
-        <div class="device-tablet crop-ipad"><img src="../assets/ipad-scratchpad.webp" alt="Scratchpad on iPad, showing one pasted input and several text transformations" width="1800" height="1309" fetchpriority="high"></div>
-        <div class="device-phone crop-iphone"><img src="../assets/iphone-template.webp" alt="Clean a List template preview on iPhone" width="832" height="1800"></div>
+        <div class="device-tablet crop-ipad"><img src="../assets/signature-light-scratchpad.webp" data-themed-scratchpad="../assets/" alt="Text Case Scratchpad with live text transformations" width="1600" height="1135" fetchpriority="high"></div>
+        <div class="device-phone crop-iphone"><img src="../assets/iphone-template.webp" alt="Clean a List template preview on iPhone" width="832" height="1808"></div>
       </figure>
     </div>
   </section>
@@ -85,7 +104,7 @@
         <li>Choose list or grid view. The input and results sit side by side when there’s room, and stack in smaller windows.</li>
       </ul>
     </div>
-    <figure class="story-visual visual-blue"><div class="story-screen crop-ipad"><img src="../assets/ipad-scratchpad.webp" alt="Scratchpad on iPad with pasted text on the left and transformations on the right" width="1800" height="1309" loading="lazy"></div></figure>
+    <figure class="story-visual visual-blue"><div class="story-screen crop-ipad"><img src="../assets/signature-light-scratchpad.webp" data-themed-scratchpad="../assets/" alt="Text Case Scratchpad with live text transformations" width="1600" height="1135" loading="lazy"></div></figure>
   </section>
 
   <section id="build-flows" class="feature-story reverse-story">
@@ -99,7 +118,7 @@
       </ul>
       <p><a class="text-link" href="../#flows">Try a sample flow <span aria-hidden="true">→</span></a></p>
     </div>
-    <figure class="story-visual visual-red"><div class="story-screen flow-screen"><img src="../assets/flow-hero.webp" alt="Flow builder with input, output and numbered steps you can switch on or off" width="1600" height="1593" loading="lazy"></div></figure>
+    <figure class="story-visual visual-red"><div class="story-screen flow-screen"><img src="../assets/flow-hero.webp" alt="Flow builder with input, output and numbered steps you can switch on or off" width="1600" height="1000" loading="lazy"></div></figure>
   </section>
 
   <section id="ai" class="feature-story">
@@ -139,7 +158,7 @@
   </div>
 </main>
 <footer class="site-footer"><div class="wrap footer-grid">
-  <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="32" height="32">Text Case</a>
+  <a class="brand" href="../"><span class="twin-pages" aria-hidden="true"><i></i><i></i></span>Text Case</a>
   <nav aria-label="Footer"><a href="../release-notes/">Release Notes</a><a href="../press/">Press Kit</a><a href="../help/">Support</a><a href="https://chrishannah.me/apps/text-case/privacy-policy">Privacy</a></nav>
   <p>Made by <a href="https://chrishannah.me/">Chris Hannah</a>.</p>
 </div></footer>
